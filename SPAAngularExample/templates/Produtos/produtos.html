@@ -1,0 +1,21 @@
+﻿<div class="row">
+    <div class="span10">
+        <h2>Produtos</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="span10">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+            </tr>
+            <tr ng-repeat="produto in produtos">
+                <td>{{produto.codigo}}</td>
+                <td>{{produto.nome}}</td>
+                <td>{{produto.descricao}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

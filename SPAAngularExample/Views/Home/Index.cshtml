@@ -1,0 +1,23 @@
+﻿@model SPAAngularExample.Models.Cadastros.Cadastro
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section JavascriptHeader
+{
+    <script src="~/app/Produtos/produtos-controller.js"></script>
+    <script src="~/app/Clientes/clientes-controller.js"></script>
+    <script type="text/javascript">
+        app.factory('bootstrappedData', function() {
+            return {
+                produtos: @Html.Raw(Model.Produtos),
+                clientes: @Html.Raw(Model.Clientes)
+                };
+        });
+    </script>
+}
+
+<div class="container">
+    <div ng-view></div>
+</div>
