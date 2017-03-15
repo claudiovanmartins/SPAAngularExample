@@ -29,7 +29,8 @@ namespace SPAAngularExample.Models.Cadastros
                 new Produto { Codigo= "2S", Nome= "Stout", Descricao = "Cerveja STOUT 250ml" },
                 new Produto { Codigo= "3I", Nome= "IPA", Descricao = "Cerveja IPA 600ml" },
                 new Produto { Codigo= "4F", Nome= "Fun Weiss", Descricao = "Cerveja Fun Weiss 600 Ml" },
-                new Produto { Codigo= "5R", Nome= "Red Ale", Descricao = "Cerveja Red Ale 600 Ml" }
+                new Produto { Codigo= "5R", Nome= "Red Ale", Descricao = "Cerveja Red Ale 600 Ml" },
+                new Produto { Codigo= "6R", Nome= "Pilsen", Descricao = "Cerveja Pilse Ml" }
             };
 
             JsonSerializerSettings settings = new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() };
